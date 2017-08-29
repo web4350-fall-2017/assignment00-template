@@ -13,5 +13,16 @@
 	    "psr-4": {
 		    "Assignment\\": "src"
 	    }
+    },
+    "scripts": {
+        "grade": [
+            "@composer install",
+            "vendor/bin/phpunit"
+        ],
+        "push": [
+            "git add .",
+            "git commit -m 'Updated assignment'",
+            "git push origin"
+        ]
     }
 }
